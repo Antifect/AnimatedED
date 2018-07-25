@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static(appDir));
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(appDir,'index.html'));
+    res.sendFile('index.html');
 });
 
 fs.readdir(appDir, (err, files) => {

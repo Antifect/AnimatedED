@@ -21,5 +21,8 @@
   "homepage": "https://github.com/Antifect/AnimatedED",
   "scripts": {
     "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }

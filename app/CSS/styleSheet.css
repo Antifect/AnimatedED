@@ -1,0 +1,178 @@
+/* Colors #4F4FAF, #232362, #88FB65 */
+
+/* global styles */
+
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body{
+    margin: 0px; ;
+}
+
+/* Navigation */
+
+
+.topNav {
+    
+    padding: 10px 0px;
+    background-color: #4f4faf;
+}
+
+.topNav a {
+    
+    color:white;
+    padding: 10px;
+    text-align:center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #232362;
+    color:white;
+}
+
+@media screen and (max-width:600px){
+    .topNav a{
+        display: block
+    }
+}
+
+/* Logo Section */
+
+.bgimg-1 {
+    background-image: url(/GFX/Abstract3D_01.png);
+    min-height:500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.myLogo  {
+    max-height: 400px;
+    display: block;
+    padding-top: 50px;
+    margin: auto;        
+}
+
+
+/* About me section */
+
+.aboutMe{
+    display: flex;
+    flex-wrap: wrap;
+    margin:100px 50px;
+}
+
+#aboutMeBm{
+    margin: auto;
+    padding-bottom: 50px;
+    min-height: 300px;
+
+}
+
+#about{
+    width: 500px;
+    margin: auto;
+    padding-left: 50px;
+    border-left-style:solid;
+    border-width: 0.5px;
+}
+
+/* skill bars style */
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin:100px 50px;
+    
+}
+
+#skillsBm{
+    margin: auto;
+    padding-bottom: 50px;
+    min-height: 300px;
+}
+
+.skillContainer{ 
+    width: 500px;
+    margin: auto;
+    padding-left: 50px;
+    border-left-style:solid;
+    border-width: 0.5px;
+}
+
+.skillBlock{
+    padding-right: 50px;
+}
+
+.skillBars {
+
+    background-color: #ddd;
+    box-shadow: inset 0px 0px 10px 3px rgba(25,25,25,.1);
+}
+
+
+.threeD {width:80%;height:30px; background-color: #232362;}
+.twoD {width:80%;height:30px; background-color: #232362;}
+.illustration {width:70%;height:30px; background-color:#232362;}
+.design {width:70%;height:30px; background-color: #232362;}
+.HTML{width:50%;height:30px; background-color: #232362;}
+.CSS{width:50%;height:30px; background-color: #232362;}
+.js{width:20%;height:30px; background-color: #232362;}
+
+/* show reel player */
+
+.showReel{
+    margin: auto;
+    background-color: #4F4FAF;
+    padding: 50px 20px;
+    box-shadow:inset 0px 5px 10px 0px rgba(50,50,50,.3);
+}
+
+#showReelPlayer{
+    width: 100%;
+}
+
+/* Footer */
+
+#contact {
+    background-color: #232362
+        
+}
+
+#footerIconsContainer{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerIconsContainer a:hover{
+    filter: saturate(0)
+    
+}
+
+#footerIcons{
+    
+   
+    height: 50px;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px){
+    
+    #footerIconsContainer{
+        display: block;
+    }
+    
+    #footerIcons{
+        display: block;
+        margin: auto;
+    }
+}
+
+
+

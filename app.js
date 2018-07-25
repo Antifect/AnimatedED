@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static('app'));
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname,'index.html'));
+    res.sendFile(path.join(__dirname,'app','index.html'));
 });
 
-app.listen(port, () => console.log(`listening on ${port}`))
+app.listen(port, () => console.log(`listening on ${port}`));

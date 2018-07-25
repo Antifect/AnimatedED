@@ -1,0 +1,25 @@
+{
+  "name": "animate-ED",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "Edward Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antifect/AnimatedED"
+  },
+  "engines": {
+    "engines": {
+      "node": "8.11.3",
+      "npm": "4.2.0"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Antifect/AnimatedED.git"
+  },
+  "homepage": "https://github.com/Antifect/AnimatedED",
+  "scripts": {
+    "start": "node app.js"
+  }
+}

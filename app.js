@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const host = process.env.IP || 'localhost';
 
-app.use('/app', express.static('public'));
+app.use(express.static('app'));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname,'app','index.html'));

@@ -12,11 +12,4 @@ app.get('/', function(req, res) {
     res.sendFile('./index.html');
 });
 
-fs.readdir(appDir, (err, files) => {
-  files.forEach(file => {
-    console.log(file);
-  });
-})
-
-
 app.listen(port, () => console.log(`listening on ${port}`));

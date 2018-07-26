@@ -51,8 +51,16 @@ nav a:hover {
     background-size:cover;
 }
 
+@media only screen and (max-device-width:600px){
+    .bgimg-1{
+        
+        background-attachment:scroll;
+    }
+}
+
 .myLogo  {
-    max-height: 400px;
+    height:300px;
+    min-height:100px;
     display: block;
     padding-top: 50px;
     margin: auto;        
@@ -70,9 +78,15 @@ nav a:hover {
 #aboutMeBm{
     margin: auto;
     padding-bottom: 50px;
-    min-height: 300px;
-
+    min-height: 100px;
 }
+
+@media only screen and (max-device-width:812px) and (max-device-height:500px){
+    #aboutMeBm {
+        height: 200px;
+    }
+}
+    
 
 #about{
     width: 500px;
@@ -94,7 +108,13 @@ nav a:hover {
 #skillsBm{
     margin: auto;
     padding-bottom: 50px;
-    min-height: 300px;
+    min-height: 100px;
+}
+
+@media only screen and (max-device-width:812px) and (max-device-height:500px){
+    #skillsBm {
+        height: 200px;
+    }
 }
 
 .skillContainer{ 

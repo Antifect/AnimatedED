@@ -47,7 +47,7 @@ nav a:hover {
 .bgimg-1 {
     
     background-image: url(/GFX/Abstract3D_01.png);
-    min-height:300px;
+    min-height:00px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ nav a:hover {
 
 @media only screen and (max-device-width:812px),(max-device-height:500px){
     .myLogo {
-        height: 300px;
+        height:300px;
     }
 }
 
@@ -174,14 +174,13 @@ nav a:hover {
 /* show reel player */
 
 .showReel{
-    margin: auto;
     background-color: #232362;
-    padding: 50px 20px;
+    padding: 20px 20px;
     box-shadow:inset 0px 5px 10px 0px rgba(50,50,50,.3);
 }
 
 #showReelPlayer{
-    width: 100%;
+    width:100%;
 }
 
 @media only screen and (min-device-width:1920px){

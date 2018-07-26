@@ -160,24 +160,22 @@ nav a:hover {
 /* Footer */
 
 #contact {
-    background-color: #232362
+    background-color: #4F4FAF;
         
 }
 
 #footerIconsContainer{
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #footerIconsContainer a:hover{
-    filter: saturate(0)
+    filter:invert(1);
     
 }
 
-#footerIcons{
-    
-   
+#footerIcons{ 
     height: 50px;
     padding: 25px;
 }
@@ -186,12 +184,7 @@ nav a:hover {
     
     #footerIconsContainer{
         display: block;
-    }
-    
-    #footerIcons{
-        display: block;
-        margin: auto;
-    }
+    } 
 }
 
 

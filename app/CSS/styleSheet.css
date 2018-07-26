@@ -83,7 +83,7 @@ nav a:hover {
 
 @media only screen and (max-device-width:812px) and (max-device-height:500px){
     #aboutMeBm {
-        height: 200px;
+        height: 100px;
     }
 }
     
@@ -113,7 +113,7 @@ nav a:hover {
 
 @media only screen and (max-device-width:812px) and (max-device-height:500px){
     #skillsBm {
-        height: 200px;
+        height: 100px;
     }
 }
 

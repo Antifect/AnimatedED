@@ -81,9 +81,9 @@ nav a:hover {
     min-height: 100px;
 }
 
-@media only screen and (max-device-width:812px) and (max-device-height:500px){
+@media only screen and (max-device-width:812px), (max-device-height:500px){
     #aboutMeBm {
-        height: 100px;
+        height: 150px;
     }
 }
     
@@ -111,9 +111,9 @@ nav a:hover {
     min-height: 100px;
 }
 
-@media only screen and (max-device-width:812px) and (max-device-height:500px){
+@media only screen and (max-device-width:812px)1 (max-device-height:500px){
     #skillsBm {
-        height: 100px;
+        height: 150px;
     }
 }
 

@@ -26,7 +26,13 @@ nav {
 }
 
 #topNav {
-    display:none;
+    
+}
+
+@media screen and (max-width:872px){
+    #topNav {
+        display: none;
+    }
 }
 
 #mobileNavIcon{

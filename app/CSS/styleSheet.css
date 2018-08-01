@@ -8,37 +8,94 @@ html {
     font-size: 1em;
 }
 
-body{
+body {
     
     margin: 0px; ;
 }
 
 /* Navigation */
 
-
-.topNav {
+nav {
     
-    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
     background-color: #4f4faf;
+    box-shadow: 0px 0px 10px 3px rgba(50,50,50,.5);
 }
 
-.topNav a {
+#topNav {
+    display:none;
+}
+
+#mobileNavIcon{
+    display: none;
+}
+
+@media screen and (max-width:810px){
     
+  #mobileNavIcon{
+    display: block;
+    margin: auto;
+    height: 50px;
+    padding:15px 10px;
+   
+}  
+}
+
+#navIcons{
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+
+#navIcon{
+    padding: 15px 10px;
+    height: 50px;
+}
+
+#navIcons a:hover {
+    filter:invert(1);
+}
+
+
+#navLinks a {
+    
+    float: left;
     color:white;
-    padding: 10px;
+    padding: 20px 10px;
     text-align:center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2em;
 }
 
-nav a:hover {
+#navLinks a:hover {
+    
     background-color: #232362;
     color:white;
 }
 
-@media screen and (max-width:600px){
-    .topNav a{
-        display: block
+@media screen and (max-width:810px){
+    
+    #navLinks a {
+        float: none;
+        padding: 5px 0px;
+        font-size: 1em;
+        display: block;
+    }
+    
+    #navIcons{
+        float:none;
+    }
+    
+    #navIcon {
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
 }
 
@@ -58,7 +115,7 @@ nav a:hover {
     background-size:cover;
 } 
 
-@media only screen and (max-device-width:768px){
+@media only screen and (max-device-width:600px){
     .bgimg-1{
         min-height: 100px;
         background-attachment:scroll;
@@ -117,7 +174,7 @@ nav a:hover {
 @media only screen and (min-device-width:1920px){
     #about{
         width:1000px;
-        font-size: 2em;
+        font-size: 24px;
     }
 }
 

@@ -26,19 +26,26 @@ nav {
 }
 
 #topNav {
-    display:none;
+
 }
 
 #mobileNavIcon{
-    display: none;
+    height: 50px;
+    padding: 15px 10px;
+    float: right;
 }
 
-@media screen and (max-width:810px){
+#mobileNavIcon:hover{
+    filter: invert(1);
+}
+
+@media screen and (max-width:872px){
     
   #mobileNavIcon{
+    float: none;
     display: block;
     margin: auto;
-    height: 50px;
+    height: 25px;
     padding:15px 10px;
    
 }  
@@ -77,7 +84,7 @@ nav {
     color:white;
 }
 
-@media screen and (max-width:810px){
+@media screen and (max-width:872px){
     
     #navLinks a {
         float: none;

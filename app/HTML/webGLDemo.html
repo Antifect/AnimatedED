@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WebGL Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <script src="/app/JS/three.js"></script>
+        <script src="/app/JS/GLTFLoader.js"></script>
+        <script src="/app/JS/OrbitControls.js"></script>
+        
+       <script>
+                    
+            var scene = new THREE.Scene();
+           
+                scene.background = new THREE.Color( 0x1db7ed )
+				scene.fog = new THREE.Fog( scene.background, 0.5, 50 );
+           
+          
+            
+            var camera = new THREE.PerspectiveCamera( 75, window.innerWidth /               
+                window.innerHeight, 0.1, 1000 );
+            
+            var renderer = new THREE.WebGLRenderer();
+            
+                renderer.setSize( window.innerWidth, window.innerHeight);
+                document.body.appendChild(renderer.domElement);
+            
+            /* var gridHelper = new THREE.GridHelper( 10, 20 );
+				scene.add( gridHelper ); */
+            
+  				// LIGHTS
+				
+				var dirLight1 = new THREE.DirectionalLight( 0xffffff, 0.9 );
+				dirLight1.color.setHSL( 0.1, 1, 0.95 );
+				dirLight1.position.set( -1, 1.75, 1 );
+				dirLight1.position.multiplyScalar( 10 );
+				scene.add( dirLight1 );
+            
+				dirLight1.castShadow = true;
+
+				/* dirLightHeper = new THREE.DirectionalLightHelper( dirLight1, 10 );
+				scene.add( dirLightHeper ); */
+                
+               var dirLight2 = new THREE.DirectionalLight( 0xffffff, 0.2 );
+				dirLight2.color.setHSL( 0.1, 1, 0.95 );
+				dirLight2.position.set( 1, 1.75, -1 );
+				dirLight2.position.multiplyScalar( 10 );
+				scene.add( dirLight2 );
+            
+				dirLight1.castShadow = true;
+
+				/* dirLightHeper = new THREE.DirectionalLightHelper( dirLight2, 10 );
+				scene.add( dirLightHeper ); */
+            
+            
+            var clock = new THREE.Clock( );
+            var loader = new THREE.GLTFLoader ( );
+            var mixer = new THREE.AnimationMixer( scene );
+           
+            loader.load (
+            '/app/GFX/gLTF/jeepAnim.gltf',
+                function ( gltf )
+                {
+                    scene.add(gltf.scene); // need to find a way to play all animations clips 
+                    
+                    var animation1 = gltf.animations[ 0 ];
+                    mixer.clipAction(animation1).play();
+                    
+                    var animation2 = gltf.animations [ 1 ];
+                    mixer.clipAction(animation2).play();
+                    
+                    var animation3 = gltf.animations [ 2 ];
+                    mixer.clipAction(animation3).play();
+                    
+                    var animation4 = gltf.animations [ 3 ];
+                    mixer.clipAction(animation4).play();
+                    
+                    var animation5 = gltf.animations [ 4 ];
+                    mixer.clipAction(animation5).play();
+                    
+                    var animation6 = gltf.animations [ 5 ];
+                    mixer.clipAction(animation6).play();
+                    
+                    var animation7 = gltf.animations [ 6 ];
+                    mixer.clipAction(animation6).play();
+                    
+                    var animation8 = gltf.animations [ 7 ];
+                    mixer.clipAction(animation8).play();
+                    
+                    var animation9 = gltf.animations [ 8 ];
+                    mixer.clipAction(animation9).play();
+                    
+                    var animation10 = gltf.animations [ 9 ];
+                    mixer.clipAction(animation10).play();
+                    
+                    var animation11 = gltf.animations [ 10 ];
+                    mixer.clipAction(animation11).play();
+                    
+                    var animation12 = gltf.animations [ 11 ];
+                    mixer.clipAction(animation12).play();
+                    
+                    var animation13 = gltf.animations [ 12 ];
+                    mixer.clipAction(animation13).play();
+                    
+                    var animation14 = gltf.animations [ 13 ];
+                    mixer.clipAction(animation14).play();
+                    
+                    var animation15 = gltf.animations [ 14 ];
+                    mixer.clipAction(animation15).play();
+                    
+                    var animation16 = gltf.animations [ 15 ];
+                    mixer.clipAction(animation16).play();
+                    
+                    var animation17 = gltf.animations [ 16 ];
+                    mixer.clipAction(animation17).play();
+                    
+                    var animation18 = gltf.animations [ 17 ];
+                    mixer.clipAction(animation18).play();
+                    
+                    var animation19 = gltf.animations [ 18 ];
+                    mixer.clipAction(animation19).play();
+                    
+                    var animation20 = gltf.animations [ 19 ];
+                    mixer.clipAction(animation20).play();
+                    
+                    var animation21 = gltf.animations [ 20 ];
+                    mixer.clipAction(animation21).play();
+                    
+                    var animation22 = gltf.animations [ 21 ];
+                    mixer.clipAction(animation22).play();
+                    
+                    var animation23 = gltf.animations [ 22 ];
+                    mixer.clipAction(animation23).play();
+                }
+            );
+            
+           camera.position.set (-5,8,10);
+           camera.lookAt (scene.position);
+           
+           controls = new THREE.OrbitControls( camera, renderer.domElement );
+            
+            
+            
+             // GROUND
+				var groundGeo = new THREE.PlaneBufferGeometry( 10000, 10000 );
+           
+				var groundMat = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0x050505 } );
+				groundMat.color.set( 0x726557 );
+           
+				var ground = new THREE.Mesh( groundGeo, groundMat );
+				ground.rotation.x = -Math.PI/2;
+				ground.position.y = 0;
+				scene.add( ground );
+				ground.receiveShadow = true;
+           
+           
+
+            
+            // game logic
+            var update = function ( )
+            {
+               mixer.update( clock.getDelta ( ) );
+            };
+            
+            //draw scene
+            var render = function( )
+            {
+                
+                renderer.render(scene,camera);
+                renderer.gammaInput = true;
+				renderer.gammaOutput = true;
+                renderer.shadowMap.enabled = true;
+            };
+            
+            //run game loop (update,render,repeat)
+            var gameLoop = function ( )
+            {
+                requestAnimationFrame (gameLoop);
+                
+                update();
+                render();
+            };
+            
+            gameLoop();
+            
+        </script>
+        
+    </body>
+
+</html>

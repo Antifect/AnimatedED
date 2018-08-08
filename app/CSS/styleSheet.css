@@ -128,7 +128,7 @@ nav {
     background-size:cover;
 } 
 
-@media only screen and (max-device-width:600px){
+@media only screen and (max-device-width:768px){
     .bgimg-1{
         min-height: 100px;
         background-attachment:scroll;

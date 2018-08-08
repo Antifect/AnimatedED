@@ -50,7 +50,7 @@ nav a:hover {
 }
 
  .bgimg-1 {
-    background-image: url(app/GFX/Abstract3D_01.png);
+    background-image: url(/app/GFX/img/Abstract3D_01.png);
     min-height:500px;
     background-attachment: fixed;
     background-position: center;

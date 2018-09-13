@@ -13,6 +13,13 @@ body {
     margin: 0px; ;
 }
 
+
+
+
+
+
+
+
 /* Navigation */
 
 nav {
@@ -23,13 +30,14 @@ nav {
     width: 100%;
     background-color: #4f4faf;
     box-shadow: 0px 0px 10px 3px rgba(50,50,50,.5);
+    
 }
 
 #topNav {
     
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:1075px){
     #topNav {
         display: none;
     }
@@ -45,7 +53,8 @@ nav {
     filter: invert(1);
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:1075px){
+    
     
   #mobileNavIcon{
     float: none;
@@ -53,6 +62,8 @@ nav {
     margin: auto;
     height: 25px;
     padding:15px 10px;
+    
+    
    
 }  
 }
@@ -90,7 +101,7 @@ nav {
     color:white;
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:1075px){
     
     #navLinks a {
         float: none;
@@ -112,6 +123,12 @@ nav {
     }
 }
 
+
+
+
+
+
+
 /* Logo Section */
 
 #edLogoAnimBm{
@@ -120,7 +137,7 @@ nav {
 }
 
  .bgimg-1 {
-    background-image: url(/GFX/img/Abstract3D_01.png);
+    background-image: url(/app/GFX/img/Abstract3D_01.png);
     min-height:500px;
     background-attachment: fixed;
     background-position: center;
@@ -151,6 +168,13 @@ nav {
         height:300px;
     }
 }
+
+
+
+
+
+
+
 
 /* About me section */
 
@@ -197,6 +221,13 @@ nav {
     }
 }
 
+
+
+
+
+
+
+
 /* skill bars style */
 
 #skills {
@@ -206,7 +237,24 @@ nav {
     
 }
 
+.timeLine {
+    min-width: inherit;
+    height: 25px;
+    border-bottom:1px solid black;
+    
+}
 
+#beginner{
+    float:left;
+}
+
+
+#skilled{
+    float: right;
+}
+
+.timeLine p{
+}
 
 #skillsBm{
     margin: auto;
@@ -235,13 +283,19 @@ nav {
 }
 
 .skillBlock{
-    padding-right: 50px;
+    padding-top:25px;
 }
 
 .skillBars {
 
     background-color: #ddd;
     box-shadow: inset 0px 0px 10px 3px rgba(25,25,25,.1);
+}
+
+.skillBars p {
+    color:white;
+    padding-top: 2px;
+    padding-left:20px;
 }
 
 
@@ -252,6 +306,12 @@ nav {
 .HTML{width:50%;height:30px; background-color: #232362;}
 .CSS{width:50%;height:30px; background-color: #232362;}
 .js{width:20%;height:30px; background-color: #232362;}
+
+
+
+
+
+
 
 /* show reel player */
 
@@ -270,6 +330,11 @@ nav {
     min-height:720px;
     }
 }
+
+
+
+
+
 
 /* Footer */
 

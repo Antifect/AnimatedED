@@ -8,8 +8,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Built With
 
-HTML5,CSS,JavaScript.
-Brackets:(http://brackets.io).
-Blender:(https://www.blender.org).
-Adobe cc (AF,AI):(https://www.adobe.com).
-three.js:(https://threejs.org).
+* HTML5,CSS,JavaScript.
+* Brackets:(http://brackets.io).
+* Blender:(https://www.blender.org).
+* Adobe cc (AF,AI):(https://www.adobe.com).
+* three.js:(https://threejs.org).

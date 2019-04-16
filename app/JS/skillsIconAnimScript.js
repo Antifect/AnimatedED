@@ -1,4 +1,4 @@
-var animation = bodymovin.loadAnimation ({
+var animation = lottie.loadAnimation ({
      container:document.getElementById('skillsBm'),
     renderer:'svg',
     loop:true,

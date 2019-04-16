@@ -6,7 +6,7 @@ var animationData = {
     path: 'JS/aboutIconAnim.json'
 };
 
-var animation = bodymovin.loadAnimation(animationData);
+var animation = lottie.loadAnimation(animationData);
 
 function animate () {
     animation.paly();

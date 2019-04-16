@@ -8,7 +8,7 @@ var animationData = {
     path: 'JS/edLogoAnim.json'
 };
 
-animation = bodymovin.loadAnimation(animationData);
+animation = lottie.loadAnimation(animationData);
 
 var x = document.getElementById('home');
 x.addEventListener('click', animate);

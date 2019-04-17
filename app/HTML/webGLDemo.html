@@ -72,76 +72,11 @@
             '/GFX/gLTF/jeepAnim.gltf',
                 function ( gltf )
                 {
-                    scene.add(gltf.scene); // need to find a way to play all animations clips 
+                    scene.add(gltf.scene); 
                     
-                    var animation1 = gltf.animations[ 0 ];
-                    mixer.clipAction(animation1).play();
-                    
-                    var animation2 = gltf.animations [ 1 ];
-                    mixer.clipAction(animation2).play();
-                    
-                    var animation3 = gltf.animations [ 2 ];
-                    mixer.clipAction(animation3).play();
-                    
-                    var animation4 = gltf.animations [ 3 ];
-                    mixer.clipAction(animation4).play();
-                    
-                    var animation5 = gltf.animations [ 4 ];
-                    mixer.clipAction(animation5).play();
-                    
-                    var animation6 = gltf.animations [ 5 ];
-                    mixer.clipAction(animation6).play();
-                    
-                    var animation7 = gltf.animations [ 6 ];
-                    mixer.clipAction(animation6).play();
-                    
-                    var animation8 = gltf.animations [ 7 ];
-                    mixer.clipAction(animation8).play();
-                    
-                    var animation9 = gltf.animations [ 8 ];
-                    mixer.clipAction(animation9).play();
-                    
-                    var animation10 = gltf.animations [ 9 ];
-                    mixer.clipAction(animation10).play();
-                    
-                    var animation11 = gltf.animations [ 10 ];
-                    mixer.clipAction(animation11).play();
-                    
-                    var animation12 = gltf.animations [ 11 ];
-                    mixer.clipAction(animation12).play();
-                    
-                    var animation13 = gltf.animations [ 12 ];
-                    mixer.clipAction(animation13).play();
-                    
-                    var animation14 = gltf.animations [ 13 ];
-                    mixer.clipAction(animation14).play();
-                    
-                    var animation15 = gltf.animations [ 14 ];
-                    mixer.clipAction(animation15).play();
-                    
-                    var animation16 = gltf.animations [ 15 ];
-                    mixer.clipAction(animation16).play();
-                    
-                    var animation17 = gltf.animations [ 16 ];
-                    mixer.clipAction(animation17).play();
-                    
-                    var animation18 = gltf.animations [ 17 ];
-                    mixer.clipAction(animation18).play();
-                    
-                    var animation19 = gltf.animations [ 18 ];
-                    mixer.clipAction(animation19).play();
-                    
-                    var animation20 = gltf.animations [ 19 ];
-                    mixer.clipAction(animation20).play();
-                    
-                    var animation21 = gltf.animations [ 20 ];
-                    mixer.clipAction(animation21).play();
-                    
-                    var animation22 = gltf.animations [ 21 ];
-                    mixer.clipAction(animation22).play();
-                    
-                    var animation23 = gltf.animations [ 22 ];
-                    mixer.clipAction(animation23).play();
+                    gltf.animations.forEach((clip) => {
+                    mixer.clipAction(clip).play();
+                    });
                 }
             );
             

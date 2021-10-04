@@ -7,25 +7,53 @@
         <title>AnimatED</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,600" rel="stylesheet">
+        <link rel="shortcut icon" href="GFX/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="CSS/styleSheet.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+        <script src ="JS/mobileNavScript.js"></script>
         
     </head>
     
     <body>
         
-        <nav class="topNav">
+        <nav>
+            
+            <img id = "mobileNavIcon" onclick = "mobileNavFunction()"  src ="GFX/img/Hamburger%20Icon.png">
+            
+        <div id="topNav">
+            
+            <div id = navLinks>
                 
                 <a href="#aboutMeBm">About</a>
                 <a href="#showReelPlayer">Show Reel</a>
-                <a href="mailto:smithed1235@gmail.com" target="_top">Contact</a>
+                <a href="mailto:smithed1235@gmail.com" target="_blank">Contact</a>
+                <a href="HTML/webGLDemo.html" target="_blank">WebGL</a>
+                
+            </div>
+                
+            <div id = "navIcons">
+                
+                <a href="https://github.com/Antifect" target="_blank"><img id="navIcon" src ="GFX/img/Github%20Icon.png"></a>
+                
+                <a href="https://www.behance.net/Smithed123899c" target="_blank"><img id="navIcon" src="GFX/img/Behance%20Icon.png"></a>
+                
+                <a href="https://vimeo.com/antifect" target="_blank"><img id="navIcon" src ="GFX/img/Vemio%20Icon.png"></a>
+                
+                <a href="https://www.linkedin.com/in/edsmith1235" target="_blank"><img id="navIcon" src ="GFX/img/Linkedin%20Icon.png"></a>
+                
+                <a href="https://dribbble.com/Antifect" target="_blank"><img id="navIcon" src ="GFX/img/Dribbble%20Icon.png"></a>
+                
+                <a href="mailto:smithed1235@gmail.com" target="_top"><img id="navIcon" src ="GFX/img/Mail%20Icon.png"></a>
+                
+            </div>
+            
+            </div>
             
         </nav>
         <div class ="logoSection">
         
         <div class="bgimg-1" id="home">
             <div class="myLogo" id="edLogoAnimBm"></div>
-            <!--<img class = "myLogo" src ="GFX/ED%20Logo.png"> -->
         </div> 
             
             </div>
@@ -38,13 +66,12 @@
             
                 <p id="about">
                     <br><b>ABOUT ME</b><br>
-                    <br>After getting my degree in film arts at the <b>Open Window Institute for Arts 
-                    and Digital Sciences</b>, double majoring in <b>Motion design</b> and <b>3D animation</b>.<br>
-                    <br>    
-                    I set out to find work finding a place to grow and perfect my art getting the 
-                    amazing opportunity to work on brands like <b>Key Health, Fed Health, Redefine, Makro</b> and <b>AVBOB</b> 
-                    finding an interest in Interactive design I started learning <b>HTML, CSS</b> and <b>Java script</b> to take 
-                    my animation to the next frontier the web.</p>
+                    <br>After getting my Degree from the <a href ="https://www.openwindow.co.za" target="_blank">Open Window</a>, double majoring in 3D animation and Motion Design,<br>
+                    <br>
+                    I started Working in the advertising industry getting exposed to a range of projects in a range of different disciplines.
+                    After a few years I was introduced to the world of web design and WebGL and started learning front end web development from <a href="https://www.edx.org" target="_blank">edX.</a><br>
+                    <br>
+                    This was a breath of fresh air as I had found a new path to follow taking my skills to a different frontier… the web. 
             </div>
     
             
@@ -54,54 +81,62 @@
         <div class = "skillContainer">
             
             <p><b>SKILLS</b></p>
-                    
+            
+            <div class="timeLine">
+                
+             <span id="beginner">| Beginner</span>
+             <span id="skilled">Skilled |</span>
+            
+            </div>
+            
+            
+            
             <div class="skillBlock">
-                <p>3D Animation</p>
                 <div class = "skillBars">
-                    <div class = "skills threeD"></div>
+                    <div class = "skills threeD"><p>3D Animation</p></div>
                 </div>   
             </div>
             
             <div class="skillBlock">
-                <p>2D Animation</p>
+               
                 <div class="skillBars">
-                    <div class = "skills twoD"></div>   
+                    <div class = "skills twoD"> <p>2D Animation</p></div>   
                 </div>
             </div>
             
             <div class="skillBlock">
-                <p>Illustration</p>
+               
                 <div class = "skillBars">
-                    <div class = "skills illustration"></div>
+                    <div class = "skills illustration"> <p>Illustration</p></div>
                 </div>
             </div>
         
             <div class="skillBlock">
-                <p>Design</p>
+                
                 <div class = "skillBars">
-                    <div class = "skills design"></div>
+                    <div class = "skills design"><p>Design</p></div>
                 </div>
             </div>
             
             <div class="skillBlock">
-            <p>HTML</p>
+            
                 <div class = "skillBars">
-                    <div class = "skills HTML"></div>
+                    <div class = "skills HTML"><p>HTML</p></div>
                 </div>
             </div>
             
         
             <div class="skillBlock">
-            <p>CSS</p>
+           
                 <div class = "skillBars">
-                    <div class = "skills CSS"></div>
+                    <div class = "skills CSS"> <p>CSS</p></div>
                 </div>
             </div>
         
             <div class="skillBlock">
-            <p>JavaScript</p>
+           
                 <div class = "skillBars">
-                    <div class = "skills js"></div>
+                    <div class = "skills js"> <p>JavaScript</p></div>
                 </div>
             </div>
             
@@ -110,29 +145,32 @@
         
         <div class = "showReel">
             
-            <iframe id="showReelPlayer" src="https://player.vimeo.com/video/280231707" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe id="showReelPlayer" src="https://player.vimeo.com/video/397638843" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             
         </div>
         
-        <script src = "JS/bodymovin.js"></script>
+        <script src = "JS/lottie.min.js"></script>
         <script src="JS/aboutIconAnimScript.js"></script>
         <script src ="JS/skillsIconAnimScript.js"></script>
         <script src ="JS/edLogoAnimScript.js"></script>
+        
 
             
     <div id="contact">
                 
         <div id = "footerIconsContainer">
             
-        <a href="mailto:smithed1235@gmail.com" target="_top"><img id="footerIcons" src ="GFX/Mail%20Icon.png"></a>
+        <a href="mailto:smithed1235@gmail.com" target="_top"><img id="footerIcons" src ="GFX/img/Mail%20Icon.png"></a>
             
-        <a href="https://dribbble.com/Antifect" target="_blank"><img id="footerIcons" src ="GFX/Dribbble%20Icon.png"></a>
+        <a href="https://dribbble.com/Antifect" target="_blank"><img id="footerIcons" src ="GFX/img/Dribbble%20Icon.png"></a>
             
-        <a href="https://www.linkedin.com/in/edsmith1235" target="_blank"><img id="footerIcons" src ="GFX/Linkedin%20Icon.png"></a>
+        <a href="https://www.linkedin.com/in/edsmith1235" target="_blank"><img id="footerIcons" src ="GFX/img/Linkedin%20Icon.png"></a>
             
-        <a href="https://vimeo.com/antifect" target="_blank"><img id="footerIcons" src ="GFX/Vemio%20Icon.png"></a>
+        <a href="https://vimeo.com/antifect" target="_blank"><img id="footerIcons" src ="GFX/img/Vemio%20Icon.png"></a>
             
-        <a href="https://github.com/Antifect" target="_blank"><img id="footerIcons" src ="GFX/Github%20Icon.png"></a>     
+        <a href="https://www.behance.net/Smithed123899c" traget="_blank"><img id="footerIcons" src="GFX/img/Behance%20Icon.png"></a>
+            
+        <a href="https://github.com/Antifect" target="_blank"><img id="footerIcons" src ="GFX/img/Github%20Icon.png"></a>     
             
         </div>
         
